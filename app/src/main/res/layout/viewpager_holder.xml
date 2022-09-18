@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:background="@drawable/tarif_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tariff_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/roboto_black"
+            android:text="Oddiy 10"
+            android:textColor="#FFD12D"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/minute_pager"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="64dp"
+
+            android:layout_marginTop="12dp"
+            android:background="@drawable/circular_back"
+            android:padding="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tariff_name"
+            app:srcCompat="@drawable/minut" />
+
+        <ImageView
+            android:id="@+id/message_pager"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circular_back"
+            android:padding="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/minute_pager"
+            app:layout_constraintEnd_toStartOf="@+id/internet_view"
+            app:layout_constraintStart_toEndOf="@+id/minute_pager"
+            app:layout_constraintTop_toTopOf="@+id/minute_pager"
+            app:srcCompat="@drawable/message" />
+
+        <ImageView
+            android:id="@+id/internet_view"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="64dp"
+            android:background="@drawable/circular_back"
+            android:padding="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/minute_pager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/minute_pager"
+            app:srcCompat="@drawable/internet" />
+
+        <TextView
+            android:id="@+id/minutes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 MIN"
+            android:textColor="#FFD12D"
+            app:layout_constraintEnd_toEndOf="@+id/minute_pager"
+            app:layout_constraintHorizontal_bias="0.611"
+            app:layout_constraintStart_toStartOf="@+id/minute_pager"
+            app:layout_constraintTop_toBottomOf="@+id/minute_pager" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 SMS"
+            android:textColor="#FFD12D"
+            app:layout_constraintEnd_toEndOf="@+id/message_pager"
+            app:layout_constraintStart_toStartOf="@+id/message_pager"
+            app:layout_constraintTop_toBottomOf="@+id/message_pager" />
+
+        <TextView
+            android:id="@+id/megabyte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 MB"
+            android:textColor="#FFD12D"
+            app:layout_constraintEnd_toEndOf="@+id/internet_view"
+            app:layout_constraintStart_toStartOf="@+id/internet_view"
+            app:layout_constraintTop_toBottomOf="@+id/internet_view" />
+
+        <TextView
+            android:id="@+id/subscription_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:text="Oyiga 10000 so`m"
+            android:textColor="#68D2FF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/message_pager" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

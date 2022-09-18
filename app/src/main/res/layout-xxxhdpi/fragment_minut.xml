@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".InternetFragment"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:orientation="horizontal"
+        android:paddingVertical="6dp"
+        android:layout_marginStart="10dp">
+        <ImageView
+            android:id="@+id/minut_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:src="@drawable/back"
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="4dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Daqiqa paketlar"
+            android:layout_marginStart="12dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+
+
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/check_minute"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Qoldiqni tekshirish"
+        android:layout_marginVertical="8dp"
+        android:backgroundTint="#FFD12D"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto_black"
+        android:textSize="14dp"
+        android:paddingHorizontal="32dp"
+        android:textColor="#B08E15"
+        android:background="@drawable/button_back_stroke"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/white_rounded_back"
+        >
+        <ExpandableListView
+            android:layout_marginTop="8dp"
+            android:id="@+id/expandable_list_minut"
+            android:layout_width="match_parent"
+            android:divider="#CAC7C7"
+            android:dividerHeight="0.2mm"
+            android:groupIndicator="@null"
+            android:layout_height="match_parent"
+            android:indicatorEnd="?android:attr/expandableListPreferredItemIndicatorRight"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".InternetFragment"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:orientation="horizontal"
+        android:paddingVertical="6dp"
+        android:layout_marginStart="10dp">
+        <ImageView
+            android:id="@+id/internet_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/back"
+            android:scaleType="centerCrop"
+            android:padding="4dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Internet paketlar"
+            android:layout_marginStart="12dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:paddingVertical="2dp"
+        >
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/daily_internet"
+            android:layout_width="0dp"
+            android:text="kunlik"
+            android:textColor="@color/white"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selected_item_back"
+            android:layout_marginHorizontal="16dp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/monthly_internet"
+            android:layout_width="0dp"
+            android:text="Oylik"
+            android:textColor="@color/white"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_back_stroke"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="16dp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nightly_unlim"
+            android:layout_width="0dp"
+            android:text="Tungi cheksiz"
+            android:textColor="@color/white"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_back_stroke"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="16dp"
+            />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/check_internet"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Qoldiqni tekshirish"
+        android:layout_marginVertical="4dp"
+        android:backgroundTint="#FFD12D"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto_black"
+        android:textSize="14dp"
+        android:paddingHorizontal="32dp"
+        android:textColor="#B08E15"
+        android:background="@drawable/button_back_stroke"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/white_rounded_back"
+        >
+        <ExpandableListView
+            android:id="@+id/expandable_list_internet"
+            android:layout_width="match_parent"
+            android:divider="#CAC7C7"
+            android:dividerHeight="0.2mm"
+            android:groupIndicator="@null"
+            android:layout_height="match_parent"
+ />
+
+    </LinearLayout>
+
+</LinearLayout>

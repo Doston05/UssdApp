@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".TarifFragment"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:orientation="horizontal"
+        android:paddingVertical="6dp"
+        android:layout_marginStart="10dp">
+        <ImageView
+            android:id="@+id/tarif_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/back"
+            android:groupIndicator="@null"
+            android:scaleType="centerCrop"
+            android:padding="4dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Tariflar"
+            android:layout_marginStart="12dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/white_rounded_back"
+        >
+
+        <ExpandableListView
+            android:id="@+id/expandable_list_tarif"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#CAC7C7"
+            android:dividerHeight="0.2mm"
+            android:indicatorEnd="?android:attr/expandableListPreferredItemIndicatorRight" />
+
+    </LinearLayout>
+
+</LinearLayout>

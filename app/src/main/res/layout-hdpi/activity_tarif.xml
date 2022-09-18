@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".TarifFragment"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="-20dp"
+            android:background="@drawable/white_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+
+            <TextView
+                android:id="@+id/tarif_name_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:text="Тариф “Просто 10”"
+                android:textColor="#039BE5"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="8dp"
+                android:text="Abonent to’lovi:"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tarif_name_detail" />
+
+            <TextView
+                android:id="@+id/subscription_fee_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="36dp"
+                android:text="10000 so`m"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tarif_name_detail" />
+
+            <ScrollView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingStart="36dp"
+                    android:paddingEnd="36dp"
+                    android:text="Tarif rejasi  jismoniy va yuridik shaxslar uchun, 2019-yil  1-fеvraldan 30-iyunga qadar taqdim etiladi. Kiritilgan daqiqa limiti, MB, SMS 1 kalеndar oyiga taqdim etiladi. Tarif rejasiga «O‘zbеktеlеkom» AK sotuvlar ofisi, shuningdek, dilеrlar orqali ulanish mumkin. Abonеnt to‘lovini hisoblash abonеnt faol bo‘lganida amalga oshiriladi.  Agar abonеnt hisobida pul mablag‘i yetarli bo‘lmaganligi sababli abonеnt bloklangan bo‘lsa, to‘lov kiritilmaguniga qadar to‘lov hisoblanmaydi.  Ushbu tarif rejasiga ulanish yoki unga o‘tishda abonent to‘lovi kalendar oyidagi qolgan kunlar soniga nisbatan, kiritilgan daqiqalar, SMS va Internet trafigi, shuningdek, qolgan kunlar soni bo‘yicha (to‘liq daqiqaga yaxlitlangan holda) hisoblab chiqiladi."
+                    android:textAlignment="textStart"
+                    android:textSize="16sp" />
+            </ScrollView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_tariff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:backgroundTint="#01B4FF"
+                android:paddingHorizontal="36dp"
+                android:text="Ulanish"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="270dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:background="@drawable/tarif_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/tarif_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto_black"
+                android:text="Oddiy 10"
+                android:textColor="#FFD12D"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/minuteViewPager"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/circular_back"
+                android:padding="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tarif_name"
+                app:srcCompat="@drawable/minut" />
+
+            <ImageView
+                android:id="@+id/messageViewPager"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/circular_back"
+                android:padding="2dp"
+                app:layout_constraintBottom_toBottomOf="@+id/minuteViewPager"
+                app:layout_constraintEnd_toStartOf="@+id/mbViewPager"
+                app:layout_constraintStart_toEndOf="@+id/minuteViewPager"
+                app:srcCompat="@drawable/sms" />
+
+            <ImageView
+                android:id="@+id/mbViewPager"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="64dp"
+                android:background="@drawable/circular_back"
+                android:padding="4dp"
+                app:layout_constraintBottom_toBottomOf="@+id/minuteViewPager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/internet" />
+
+            <TextView
+                android:id="@+id/minut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 MIN"
+                android:textColor="#FFD12D"
+                app:layout_constraintEnd_toEndOf="@+id/minuteViewPager"
+                app:layout_constraintHorizontal_bias="0.611"
+                app:layout_constraintStart_toStartOf="@+id/minuteViewPager"
+                app:layout_constraintTop_toBottomOf="@+id/minuteViewPager" />
+
+            <TextView
+                android:id="@+id/sms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 SMS"
+                android:textColor="#FFD12D"
+                app:layout_constraintEnd_toEndOf="@+id/messageViewPager"
+                app:layout_constraintStart_toStartOf="@+id/messageViewPager"
+                app:layout_constraintTop_toBottomOf="@+id/messageViewPager" />
+
+            <TextView
+                android:id="@+id/mb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 MB"
+                android:textColor="#FFD12D"
+                app:layout_constraintEnd_toEndOf="@+id/mbViewPager"
+                app:layout_constraintStart_toStartOf="@+id/mbViewPager"
+                app:layout_constraintTop_toBottomOf="@+id/mbViewPager" />
+
+            <TextView
+                android:id="@+id/subscriptionfee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="4dp"
+                android:text="Oyiga 10000 so`m"
+                android:textColor="#68D2FF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
